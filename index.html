@@ -227,7 +227,7 @@ if(p.phase!=='new'&&high&&!p.infect&&p.preg==='no'&&!chronic){
  const complete=p.pcr<0.5&&(egfrDrop===null||egfrDrop<=20),partial=(drop!==null&&drop>=50&&p.pcr<3)&&(egfrDrop===null||egfrDrop<=20);
  if(complete){
    add('notes','已達近似完全腎反應數值指標','若疾病穩定，優先維持既有有效方案並逐步減少 GC；ACR 通常建議總免疫治療約 3–5 年，避免單次數值達標後立即停藥。');
-   if(p.phase==='maintenance'){r.summary='完全腎反應：延續有效維持治療、不要因單次達標就停藥';}
+   if(p.phase==='maintenance'){r.summary='完全腎反應：延續有效維持治療、不要因單次達標就停藥';r.primary=[{title:'持續既有有效維持方案（通常以 MPAA-based 方案為主）',body:'若已達持續緩解，治療重點是維持、逐步減少 glucocorticoid 與安全監測；不應僅憑曾有 Class III/IV 而自動新增 CNI 或生物製劑。個別化評估治療總期約 3–5 年及復發風險。'}];r.alternative=r.alternative.filter(x=>!x.title.includes('Obinutuzumab'));}
  }else if(partial){add('notes','達近似部分腎反應','若 UPCR 持續下降且 eGFR 穩定，可繼續治療並追蹤；趨勢停滯或惡化則重新評估。');}
  else if(p.months!==null&&p.months>=6){
    add('urgent','治療 ≥6 個月仍未達近似部分反應','先確認依從性、MPAA 劑量／曝露、藥物毒性、血壓、感染與病理活動性；必要時重切片、調整或升級治療。');
