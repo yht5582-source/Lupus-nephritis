@@ -2,7 +2,9 @@
 :root{--bg:#f4f7fb;--ink:#14273c;--sub:#5c6c7c;--blue:#1765ad;--navy:#122f4e;--green:#187b65;--amber:#a8690c;--red:#b13e43;--line:#dce5ed;--card:#fff}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,'Noto Sans TC','Segoe UI',sans-serif;line-height:1.65}header{background:linear-gradient(110deg,#102e4b,#1f5b7f);color:white;padding:28px max(20px,calc((100vw - 1180px)/2));}header h1{font-size:clamp(24px,3vw,35px);line-height:1.2;margin:4px 0}header p{margin:5px 0;color:#d7e7f2}.tag{font-size:12px;background:#ffffff23;padding:4px 9px;border-radius:30px}main{max-width:1180px;margin:20px auto;padding:0 16px 50px}.notice{border-left:4px solid #d18b27;background:#fff9eb;padding:12px 16px;border-radius:9px;font-size:14px;margin-bottom:17px}.tabs{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:16px}.tab{border:1px solid #cbdbe8;border-radius:9px;background:white;padding:11px 15px;color:var(--navy);font-weight:650;cursor:pointer}.tab[aria-selected="true"]{background:var(--navy);color:white;border-color:var(--navy)}section[hidden]{display:none}.grid{display:grid;grid-template-columns:1fr 1fr;gap:15px}.card{background:white;border:1px solid var(--line);border-radius:13px;padding:20px;box-shadow:0 2px 11px #122d4510;margin-bottom:15px}.card h2{font-size:19px;margin:0 0 12px}.card h3{font-size:16px;margin:10px 0 6px}.muted{color:var(--sub);font-size:14px}.wide{grid-column:1/-1}label{display:block;font-size:14px;font-weight:600;margin:10px 0 4px}input,select{width:100%;border:1px solid #c9d5e0;border-radius:8px;background:white;color:var(--ink);font:inherit;padding:9px 11px;min-height:42px}input:focus,select:focus{outline:2px solid #84b9e7;outline-offset:1px}.fields{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 13px}.result{background:#edf5fb;border:1px solid #cce1f2;border-radius:11px;padding:15px;margin-top:14px}.result.alert{background:#fff2ee;border-color:#edc4ba}.result.good{background:#eef9f4;border-color:#bde4d3}.result h3{margin:0 0 7px}.pill{display:inline-block;border-radius:30px;background:#e9f1fb;color:#245d90;padding:2px 9px;font-size:12px;font-weight:700}.pill.warn{background:#fff1d8;color:#8a590c}.pill.red{background:#ffe8e7;color:#9c3038}ul,ol{padding-left:21px;margin:8px 0}.btn{border:0;border-radius:9px;padding:10px 15px;cursor:pointer;background:var(--blue);color:white;font:inherit;font-weight:650}.btn.secondary{background:#e6eff8;color:#194e7d}.btn.print{background:#eef2f6;color:#30465c}.row{display:flex;flex-wrap:wrap;gap:9px;align-items:center;margin-top:12px}.step{border-left:3px solid #76acd0;padding:4px 0 4px 13px;margin:12px 0}.drug{border-top:1px solid var(--line);padding:12px 0}.drug:first-of-type{border:0}.two{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:15px}.small{font-size:13px}.stat{font-size:24px;font-weight:780;color:var(--blue)}table{width:100%;border-collapse:collapse;font-size:14px}th,td{padding:10px;text-align:left;vertical-align:top;border-bottom:1px solid var(--line)}th{background:#eff5fa}a{color:#1765ad}.footer{color:var(--sub);font-size:12px;margin-top:24px}.check{display:flex;align-items:flex-start;gap:9px;font-weight:500}.check input{width:17px;min-height:17px;height:17px;margin-top:5px}.status{font-weight:700}details{border:1px solid var(--line);border-radius:9px;padding:9px 13px;margin:8px 0}summary{cursor:pointer;font-weight:650}.onlyprint{display:none}@media(max-width:720px){.grid,.two,.fields{grid-template-columns:1fr}.card{padding:16px}.tab{flex:1 1 auto;padding:9px}.wide{grid-column:auto}}@media print{header{background:white;color:black;padding:10px}.tabs,.btn,.notice{display:none}.card{box-shadow:none;break-inside:avoid}section[hidden]{display:block}.onlyprint{display:block}main{margin:0}}
 
 .mind-wrap{overflow-x:auto;padding:8px 0}.mindmap{min-width:650px;display:grid;grid-template-columns:180px 1fr;gap:24px;align-items:center}.mind-root{border:3px solid #2d638c;border-radius:24px;padding:24px 12px;text-align:center;background:#e5f2ff;font-weight:800;color:#153b60;box-shadow:0 4px 14px #1c508022}.mind-branches{display:grid;gap:13px;position:relative;border-left:3px solid #80a7c9;padding-left:26px}.mind-branch{position:relative;display:grid;grid-template-columns:145px 1fr;gap:12px;align-items:center}.mind-branch:before{content:"";position:absolute;left:-26px;top:50%;width:26px;border-top:2px solid #80a7c9}.mind-topic{border-radius:10px;background:#e9f3fb;color:#163d60;border:1px solid #abc7db;padding:12px;text-align:center;font-weight:750}.mind-leaves{display:flex;flex-wrap:wrap;gap:6px}.mind-node{border:1px solid #b8d1e7;border-radius:9px;background:white;color:#1e537e;cursor:pointer;padding:8px 10px;font:inherit;font-size:13px;text-align:left}.mind-node:hover,.mind-node:focus-visible,.mind-node[aria-pressed="true"]{background:#164e78;color:white;outline-offset:3px}.mind-detail{min-height:126px}.mind-actions{margin-top:10px}@media(max-width:720px){.mindmap{min-width:600px;grid-template-columns:125px 1fr;gap:16px}.mind-branch{grid-template-columns:105px 1fr}.mind-branches{padding-left:16px}.mind-branch:before{left:-16px;width:16px}}
-</style></head><body><header><span class="tag">KDIGO 2024 · ACR 2024/2025 · EULAR 2023 · Taiwan NHI</span><h1>Lupus Nephritis Navigator</h1><p>狼瘡性腎炎：診斷、病理分型、治療選擇、療效追蹤與健保資格判讀</p></header><main><div class="notice"><strong>醫療決策輔助工具，不取代臨床判斷。</strong>適用成人、非妊娠患者的主要流程；快速惡化腎功能、疑似 TMA、嚴重感染與妊娠需專案處置。健保規定可能更新，申報前須核對健保署最新公告及院內藥審。</div><nav class="tabs" aria-label="主功能"><button class="tab" aria-selected="true" data-tab="diagnosis">01 診斷評估</button><button class="tab" aria-selected="false" data-tab="treatment">02 治療決策</button><button class="tab" aria-selected="false" data-tab="meds">03 藥物比較</button><button class="tab" aria-selected="false" data-tab="monitor">04 療效追蹤</button><button class="tab" aria-selected="false" data-tab="nhi">05 台灣健保</button><button class="tab" aria-selected="false" data-tab="sources">06 指引來源</button><button class="tab" aria-selected="false" data-tab="cases">07 病例與測驗</button><button class="tab" aria-selected="false" data-tab="longitudinal">08 縱向趨勢</button><button class="tab" aria-selected="false" data-tab="mindmap">09 診療心智圖</button></nav>
+
+.decision-tag{display:inline-block;background:#e8f1fb;color:#20567d;border-radius:6px;padding:2px 8px;font-size:12px;font-weight:700;margin:0 5px 5px 0}.decision-tag.orange{background:#fff1d6;color:#8c5a0a}.decision-tag.red{background:#fce8e8;color:#9b3232}.decision-item{padding:11px 14px;border-left:4px solid #3778a5;background:#f5f9fd;border-radius:6px;margin:9px 0}.decision-item.amber{border-color:#c48920;background:#fffbf1}.decision-item.red{border-color:#c43f50;background:#fff4f4}.decision-item.green{border-color:#237d64;background:#f1faf5}.decision-item h3{font-size:16px;margin:0 0 4px}.decision-item p{margin:4px 0}.decision-mini{display:flex;gap:9px;flex-wrap:wrap}.decision-mini span{background:#eaf1f7;padding:5px 9px;border-radius:7px;font-size:13px}.personal-status{font-weight:800;font-size:18px}.person-toolbar{display:flex;gap:10px;flex-wrap:wrap;margin:10px 0 0}.person-toolbar button{min-width:150px}.person-footer{font-size:12px;color:#52677b}.person-cols{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:15px}@media(max-width:760px){.person-cols{grid-template-columns:1fr}.person-toolbar button{min-width:0;flex:1}}
+</style></head><body><header><span class="tag">KDIGO 2024 · ACR 2024/2025 · EULAR 2023 · Taiwan NHI</span><h1>Lupus Nephritis Navigator</h1><p>狼瘡性腎炎：診斷、病理分型、治療選擇、療效追蹤與健保資格判讀</p></header><main><div class="notice"><strong>醫療決策輔助工具，不取代臨床判斷。</strong>適用成人、非妊娠患者的主要流程；快速惡化腎功能、疑似 TMA、嚴重感染與妊娠需專案處置。健保規定可能更新，申報前須核對健保署最新公告及院內藥審。</div><nav class="tabs" aria-label="主功能"><button class="tab" aria-selected="true" data-tab="diagnosis">01 診斷評估</button><button class="tab" aria-selected="false" data-tab="treatment">02 治療決策</button><button class="tab" aria-selected="false" data-tab="meds">03 藥物比較</button><button class="tab" aria-selected="false" data-tab="monitor">04 療效追蹤</button><button class="tab" aria-selected="false" data-tab="nhi">05 台灣健保</button><button class="tab" aria-selected="false" data-tab="sources">06 指引來源</button><button class="tab" aria-selected="false" data-tab="cases">07 病例與測驗</button><button class="tab" aria-selected="false" data-tab="longitudinal">08 縱向趨勢</button><button class="tab" aria-selected="false" data-tab="mindmap">09 診療心智圖</button><button class="tab" aria-selected="false" data-tab="personalized">10 個別化用藥建議</button></nav>
 <section id="diagnosis"><div class="grid"><div class="card"><h2>臨床與檢驗輸入</h2><div class="fields"><div><label for="sle">SLE 病史</label><select id="sle"><option value="yes">已確立 SLE</option><option value="suspected">疑似 SLE</option></select></div><div><label for="pcr">尿蛋白 UPCR (g/g)</label><input id="pcr" type="number" min="0" step="0.1" value="1.8"></div><div><label for="egfr">eGFR (mL/min/1.73m²)</label><input id="egfr" type="number" min="0" step="1" value="65"></div><div><label for="hem">活動性尿沉渣</label><select id="hem"><option value="no">無</option><option value="yes">有（血尿/紅血球圓柱等）</option></select></div><div><label for="trend">腎功能變化</label><select id="trend"><option value="stable">穩定</option><option value="down">持續惡化 / 原因未明</option></select></div><div><label for="biopsy">腎臟切片</label><select id="biopsy"><option value="none">尚未切片</option><option value="I">Class I</option><option value="II">Class II</option><option value="III">Class III</option><option value="IV">Class IV</option><option value="III+V">Class III + V</option><option value="IV+V">Class IV + V</option><option value="V">Pure Class V</option><option value="VI">Class VI</option></select></div></div><div class="row"><button class="btn" id="evaluate">評估診斷與下一步</button><button class="btn secondary" id="toTreatment">帶入治療決策</button></div></div><div class="card"><h2>建議診斷流程</h2><div class="step"><strong>1. 確認腎臟受累</strong><div class="muted">尿液常規與沉渣、UPCR/24 小時蛋白尿、Cr/eGFR、血壓、血清白蛋白。</div></div><div class="step"><strong>2. 評估 SLE 活性</strong><div class="muted">C3/C4、anti-dsDNA、CBC、肝腎功能及腎外症狀；排除感染、藥物毒性及其他腎病。</div></div><div class="step"><strong>3. 考慮腎臟切片</strong><div class="muted">ACR：蛋白尿 >0.5 g/g 或原因不明腎功能下降，建議考慮切片；若臨床惡化，不應因等待完整血清檢驗而延誤。</div></div><div class="step"><strong>4. 病理判讀</strong><div class="muted">ISN/RPS Class、activity/chronicity index、細胞性/纖維性 crescents、TMA、伴隨血管病變與慢性疤痕。</div></div><div id="dxResult" class="result" aria-live="polite"></div></div></div></section>
 <section id="treatment" hidden><div class="grid"><div class="card"><h2>個別化治療條件</h2><div class="fields"><div><label for="tclass">病理分型</label><select id="tclass"><option>III</option><option>IV</option><option>III+V</option><option>IV+V</option><option>V</option><option>II</option><option>I</option><option>VI</option></select></div><div><label for="tegfr">eGFR</label><input id="tegfr" type="number" value="65" min="0"></div><div><label for="tpcr">UPCR (g/g)</label><input id="tpcr" type="number" value="1.8" min="0" step="0.1"></div><div><label for="extra">明顯腎外 SLE 活性</label><select id="extra"><option value="no">無 / 輕微</option><option value="yes">有</option></select></div><div><label for="rapid">快速腎功能惡化 / crescent</label><select id="rapid"><option value="no">無</option><option value="yes">有</option></select></div><div><label for="preg">妊娠 / 近期備孕</label><select id="preg"><option value="no">否</option><option value="yes">是</option></select></div><div><label for="scar">病理慢性化、無明顯活動性</label><select id="scar"><option value="no">否</option><option value="yes">是</option></select></div><div><label for="phase">目前治療階段</label><select id="phase"><option value="new">初次診斷 / 復發</option><option value="response">已部分反應</option><option value="maint">已完全緩解</option></select></div></div><div class="row"><button class="btn" id="recommend">產生治療建議</button><button class="btn secondary" id="toNhi">檢視健保資格</button></div></div><div class="card"><h2>治療建議</h2><div id="txResult" class="result" aria-live="polite"></div></div></div><div class="card"><h2>共通治療及安全措施</h2><div class="two"><div><h3>基礎保護</h3><ul><li>除禁忌外使用 hydroxychloroquine（HCQ），依體重、腎功能及眼科風險調整與追蹤。</li><li>控制血壓與蛋白尿，依情況選擇 ACEi/ARB；監測鉀與 Cr。</li><li>評估血栓、感染、骨質疏鬆、心血管風險及疫苗；免疫抑制前評估 HBV/HCV/TB。</li></ul></div><div><h3>用藥安全</h3><ul><li>MMF/MPA、CYC、CNI 需監測 CBC、肝腎功能及感染。</li><li>CNI 在腎功能顯著下降、血壓難控制或 TMA 懷疑時特別審慎。</li><li>備孕與懷孕：避免 MMF、CYC（特殊救命情境例外）、ACEi/ARB 及相關禁忌藥；跨科會診。</li></ul></div></div></div></section>
 <section id="meds" hidden><div class="card"><h2>藥物與治療組合比較</h2><p class="muted">以下為成人常見指引方案與臨床參考範圍；實際處方依病情、體重、eGFR、感染與院內規範調整，不提供自動處方。</p><div style="overflow:auto"><table><thead><tr><th>藥物</th><th>常見用法 / 定位</th><th>注意事項</th><th>台灣給付提示</th></tr></thead><tbody><tr><td>HCQ</td><td>多數 SLE/LN 的基礎用藥，常以 ≤5 mg/kg/day 實際體重作長期風險考量</td><td>視網膜檢查、腎功能調整、QT 風險</td><td>依藥品適應症及健保規範</td></tr><tr><td>Glucocorticoid</td><td>ACR：IV methylprednisolone 250–1000 mg/day × 1–3 天，接續 prednisone ≤0.5 mg/kg/day（最大 40 mg/day），6 個月目標 ≤5 mg/day</td><td>感染、血糖、骨骼、胃腸與血壓</td><td>依常規規範</td></tr><tr><td>MMF / MPA</td><td>MPAA 主幹：MMF 常見 2–3 g/day；MPA 酯鹽依等效劑量</td><td>骨髓抑制、腸胃副作用、致畸；孕前轉換</td><td>核對院內適應症及申報規定</td></tr><tr><td>IV Cyclophosphamide</td><td>Euro-Lupus 500 mg IV 每 2 週，共 6 次；高風險者個別化選方案</td><td>感染、不孕風險、膀胱毒性、血球低下</td><td>依核准適應症及申報</td></tr><tr><td>Belimumab</td><td>與 MPAA 或 CYC 方案併用；國際指引可作初始三重治療組件</td><td>感染、情緒與神經精神症狀、HBV 等風險評估</td><td><strong>LN 健保：符合條件且事前審查</strong>，見健保分頁</td></tr><tr><td>Voclosporin / Tacrolimus</td><td>CNI + MPAA + steroid；proteinuria 高且 eGFR 保留者較適合</td><td>腎毒性、血壓、血鉀、交互作用；Tac 需藥物濃度監測</td><td>Voclosporin 是否收載 / LN 給付須即時查證；Tac 依品項規定</td></tr><tr><td>Azathioprine</td><td>特定維持治療、備孕或 MMF 不適用時</td><td>TPMT/NUDT15 風險、CBC/LFT、交互作用</td><td>依品項核對</td></tr><tr><td>Rituximab / anti-CD20</td><td>難治型個案專科評估，不視為一般 LN 標準第一線</td><td>輸注反應、HBV 再活化、低 IgG、感染</td><td>LN 專屬健保給付不可逕自假定</td></tr></tbody></table></div></div></section>
@@ -18,6 +20,49 @@
 <div class="mind-branch"><div class="mind-topic">④ 療效追蹤</div><div class="mind-leaves"><button class="mind-node" data-node="response">CRR / PRR</button><button class="mind-node" data-node="timeline">3 / 6 / 12 個月</button><button class="mind-node" data-node="refractory">反應不足與重切片</button></div></div>
 <div class="mind-branch"><div class="mind-topic">⑤ 台灣健保</div><div class="mind-leaves"><button class="mind-node" data-node="nhiRules">Belimumab 初次申請</button><button class="mind-node" data-node="renew">續用與事前審查</button></div></div>
 </div></div></div><div id="mindDetail" class="result mind-detail" aria-live="polite"></div><div class="row"><button class="btn secondary" id="mindGo">前往對應功能</button><button class="btn print" id="mindPrint">列印心智圖</button></div></div><div class="card"><h2>臨床使用提醒</h2><p>心智圖為診療導航，不代替完整 KDIGO／ACR 指引、病理診斷或個別病人風險評估。藥物建議與健保可給付資格須分開判斷。</p><a href="https://kdigo.org/wp-content/uploads/2024/01/KDIGO-2024-Lupus-Nephritis-Guideline.pdf" target="_blank" rel="noopener">KDIGO 2024 指引</a> · <a href="https://acrjournals.onlinelibrary.wiley.com/doi/10.1002/acr.25528" target="_blank" rel="noopener">ACR 狼瘡腎炎指引</a></div></section>
+
+<section id="personalized" hidden>
+<div class="notice"><b>病人個別化治療評估（醫師專用）</b>：本頁為可追溯規則式臨床輔助，不是自動處方；不會將資料上傳或儲存在瀏覽器永久儲存空間。請勿輸入姓名、病歷號或任何識別資訊。適用成年人；兒童須使用小兒專門指引。</div>
+<div class="card">
+<h2>快速載入示範情境</h2><div class="row">
+<button class="btn secondary" type="button" data-person-example="0">Class IV+V／大量蛋白尿</button>
+<button class="btn secondary" type="button" data-person-example="1">Class IV／低 eGFR</button>
+<button class="btn secondary" type="button" data-person-example="2">Pure V／腎病症候群</button>
+<button class="btn secondary" type="button" data-person-example="3">LN／備孕</button>
+</div><p class="muted">示範數值均為虛構，不涉及真實病人。按「清除資料」可重新輸入。</p></div>
+<div class="person-cols">
+<div class="card"><h2>① 臨床與腎功能</h2><div class="fields">
+<div><label for="ppClass">腎臟切片分類 *</label><select id="ppClass"><option value="unknown">尚未切片／分類不明</option><option value="I">Class I</option><option value="II">Class II</option><option value="III">Class III</option><option value="IV">Class IV</option><option value="III+V">Class III+V</option><option value="IV+V">Class IV+V</option><option value="V">Pure Class V</option><option value="VI">Class VI</option></select></div>
+<div><label for="ppPhase">治療階段 *</label><select id="ppPhase"><option value="new">初次治療／復發誘導</option><option value="ongoing">目前接受治療，評估反應</option><option value="maintenance">已緩解，評估維持治療</option></select></div>
+<div><label for="ppEgfr">目前 eGFR (mL/min/1.73m²) *</label><input id="ppEgfr" type="number" min="0" max="200" step="0.1" placeholder="例如 68"></div>
+<div><label for="ppBaseEgfr">治療前 eGFR</label><input id="ppBaseEgfr" type="number" min="0.1" max="200" step="0.1" placeholder="可留空"></div>
+<div><label for="ppPcr">目前 UPCR (g/g) *</label><input id="ppPcr" type="number" min="0" max="100" step="0.01" placeholder="例如 4.2"></div>
+<div><label for="ppBasePcr">治療前 UPCR (g/g)</label><input id="ppBasePcr" type="number" min="0.01" max="100" step="0.01" placeholder="可留空"></div>
+<div><label for="ppSBP">收縮壓 (mmHg)</label><input id="ppSBP" type="number" min="50" max="270" step="1" placeholder="CNI 安全評估"></div>
+<div><label for="ppDBP">舒張壓 (mmHg)</label><input id="ppDBP" type="number" min="30" max="170" step="1" placeholder="CNI 安全評估"></div>
+<div><label for="ppMonths">目前方案治療月數</label><input id="ppMonths" type="number" min="0" max="240" step="0.5" placeholder="例如 6"></div>
+<div><label for="ppRegimen">目前已接受的藥物</label><select id="ppRegimen"><option value="none">未開始／未填</option><option value="mpaa">GC + MPAA</option><option value="cyc">GC + CYC</option><option value="mpaaCni">GC + MPAA + CNI</option><option value="mpaaBeli">GC + MPAA + Belimumab</option><option value="other">其他／不確定</option></select></div>
+</div></div>
+<div class="card"><h2>② 切片活動性與風險</h2><div class="fields">
+<div><label for="ppActivity">切片活動性判斷 *</label><select id="ppActivity"><option value="unknown">未提供／不確定</option><option value="active">活動性為主</option><option value="mixed">活動性與慢性化並存</option><option value="chronic">幾無活動性、慢性化為主</option></select></div>
+<div><label for="ppAI">Activity index (0–24)</label><input id="ppAI" type="number" min="0" max="24" step="1" placeholder="選填"></div>
+<div><label for="ppCI">Chronicity index (0–12)</label><input id="ppCI" type="number" min="0" max="12" step="1" placeholder="選填"></div>
+<div><label for="ppIFTA">IFTA (%)</label><input id="ppIFTA" type="number" min="0" max="100" step="1" placeholder="選填"></div>
+<div><label for="ppCrescent">新月體／壞死</label><select id="ppCrescent"><option value="unknown">未提供</option><option value="no">無明顯活動性新月體／壞死</option><option value="yes">有活動性新月體／壞死</option></select></div>
+<div><label for="ppRapid">腎功能迅速惡化</label><select id="ppRapid"><option value="no">否</option><option value="yes">是／疑似 RPGN</option></select></div>
+<div><label for="ppExtra">腎外 SLE 活動性</label><select id="ppExtra"><option value="no">無／輕微</option><option value="yes">中重度</option></select></div>
+<div><label for="ppPreg">妊娠相關</label><select id="ppPreg"><option value="no">無</option><option value="planning">準備懷孕</option><option value="pregnant">目前懷孕</option></select></div>
+<div><label for="ppInfection">嚴重感染／未控制感染</label><select id="ppInfection"><option value="no">無</option><option value="yes">有／疑似</option></select></div>
+<div><label for="ppMMF">MMF/MPA 耐受性</label><select id="ppMMF"><option value="yes">可考慮</option><option value="no">不耐受／禁忌</option></select></div>
+<div><label for="ppCNI">CNI 其他禁忌／不耐受</label><select id="ppCNI"><option value="no">無已知</option><option value="yes">有</option></select></div>
+<div><label for="ppHBV">HBV 血清學／再活化風險</label><select id="ppHBV"><option value="unknown">未完成篩檢</option><option value="negative">HBsAg 陰性、anti-HBc 陰性</option><option value="core">HBsAg 陰性、anti-HBc 陽性</option><option value="positive">HBsAg 陽性</option></select></div>
+</div><p class="muted">AI／CI 與 IFTA 僅供提醒，並無可適用所有人的單一加權切點；請依完整病理描述判定活動性。</p></div>
+</div>
+<div class="card"><div class="person-toolbar"><button class="btn" id="ppRun" type="button">分析並比較治療方案</button><button class="btn secondary" id="ppClear" type="button">清除資料</button><button class="btn print" id="ppCopy" type="button">複製無識別資訊摘要</button></div><p class="muted" id="ppCopyStatus" aria-live="polite">請至少提供 Class、eGFR、UPCR 與切片活動性。</p></div>
+<div class="card" id="ppResult" aria-live="polite"><h2>③ 個別化臨床建議</h2><p>尚未分析。輸入去識別化資料後按上方按鈕；也可先載入示範病例。</p></div>
+<div class="card"><h2>指引與給付來源</h2><p class="small">本決策器以 KDIGO 2024、ACR LN 2024（2025 發表）、EULAR kidney involvement 2025 更新為基礎。Obinutuzumab 已獲美國 FDA 於 2025 年核准治療成人活動性 LN；<b>台灣 TFDA 許可及 NHI LN 給付狀態不在本頁自動確認範圍</b>。Belimumab 國際早期使用建議與台灣健保必須分開判斷。</p>
+<div class="row"><a href="https://kdigo.org/guidelines/lupus%20nephritis/" target="_blank" rel="noopener">KDIGO 2024</a><a href="https://acrjournals.onlinelibrary.wiley.com/doi/10.1002/acr.25528" target="_blank" rel="noopener">ACR LN Guideline</a><a href="https://pubmed.ncbi.nlm.nih.gov/41107121/" target="_blank" rel="noopener">EULAR 2025</a><a href="https://www.tsim.org.tw/ehc-tsim/s/w/AHnews/article/63db7c8f7c7d49c88052c886f3efcbc2" target="_blank" rel="noopener">台灣 Belimumab 給付修訂</a><a href="https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=df12ceb2-5b4b-4ab5-a317-2a36bf2a3cda" target="_blank" rel="noopener">FDA Obinutuzumab 標籤</a></div></div>
+</section>
 </main>
 <script>
 const $=id=>document.getElementById(id),num=id=>Number($(id).value),fmt=v=>Number.isFinite(v)?v.toFixed(1):'—';function tab(id){document.querySelectorAll('section').forEach(s=>s.hidden=s.id!==id);document.querySelectorAll('.tab').forEach(b=>b.setAttribute('aria-selected',String(b.dataset.tab===id)));window.scrollTo({top:0,behavior:'smooth'});}document.querySelectorAll('.tab').forEach(b=>b.addEventListener('click',()=>tab(b.dataset.tab)));const safe=(n)=>Number.isFinite(n)&&n>=0;
@@ -89,4 +134,145 @@ renew:{title:'續用／申報規定',body:'續用條件與所需附件可能隨�
 };
 let activeMind='screen';function selectMind(key){if(!Object.prototype.hasOwnProperty.call(mindNodes,key))return;activeMind=key;const n=mindNodes[key];$('mindDetail').innerHTML='<h3>'+n.title+'</h3><p>'+n.body+'</p>';document.querySelectorAll('.mind-node').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.node===key)));}
 document.querySelectorAll('.mind-node').forEach(b=>b.addEventListener('click',()=>selectMind(b.dataset.node)));$('mindGo').onclick=()=>tab(mindNodes[activeMind].to);$('mindPrint').onclick=()=>window.print();selectMind('screen');
+
+const personIds=['ppClass','ppPhase','ppEgfr','ppBaseEgfr','ppPcr','ppBasePcr','ppSBP','ppDBP','ppMonths','ppRegimen','ppActivity','ppAI','ppCI','ppIFTA','ppCrescent','ppRapid','ppExtra','ppPreg','ppInfection','ppMMF','ppCNI','ppHBV'];
+function pn(id){const t=$(id).value.trim();return t===''?null:Number(t)}
+function ppData(){return {cl:$('ppClass').value,phase:$('ppPhase').value,egfr:pn('ppEgfr'),be:pn('ppBaseEgfr'),pcr:pn('ppPcr'),bp:pn('ppBasePcr'),sbp:pn('ppSBP'),dbp:pn('ppDBP'),months:pn('ppMonths'),reg:$('ppRegimen').value,act:$('ppActivity').value,ai:pn('ppAI'),ci:pn('ppCI'),ifta:pn('ppIFTA'),cresc:$('ppCrescent').value,rapid:$('ppRapid').value==='yes',extra:$('ppExtra').value==='yes',preg:$('ppPreg').value,infect:$('ppInfection').value==='yes',mmf:$('ppMMF').value==='yes',cniContra:$('ppCNI').value==='yes',hbv:$('ppHBV').value}}
+function assessPersonal(p){
+const r={urgent:[],primary:[],alternative:[],avoid:[],monitor:[],notes:[],summary:'',nhi:'',valid:true};
+function add(k,t,b){r[k].push({title:t,body:b})}
+const numeric=[['egfr',0,200,true],['pcr',0,100,true],['be',0.01,200,false],['bp',0.01,100,false],['sbp',50,270,false],['dbp',30,170,false],['months',0,240,false],['ai',0,24,false],['ci',0,12,false],['ifta',0,100,false]];
+for(const [k,lo,hi,req] of numeric){if((req&&p[k]===null)||(p[k]!==null&&(!Number.isFinite(p[k])||p[k]<lo||p[k]>hi))){r.valid=false;r.summary='請輸入有效的 eGFR、UPCR 與其他數值；不能使用負值或超出欄位範圍的資料。';return r;}}
+const high=['III','IV','III+V','IV+V'].includes(p.cl),pureV=p.cl==='V',baseline=(p.bp!==null&&p.bp>0),egfrBaseline=(p.be!==null&&p.be>0);
+const drop=baseline?(p.bp-p.pcr)/p.bp*100:null,egfrDrop=egfrBaseline?(p.be-p.egfr)/p.be*100:null;
+r.drop=drop;r.egfrDrop=egfrDrop;
+const chronic=p.act==='chronic',badBP=(p.sbp!==null&&p.sbp>165)||(p.dbp!==null&&p.dbp>105),bpUnknown=p.sbp===null||p.dbp===null;
+const cniRisk=p.egfr<=45||badBP||p.cniContra||chronic;
+const canCNI=!cniRisk&&!bpUnknown;
+const reportUnknown=p.act==='unknown'&&p.cl!=='unknown'&&p.cl!=='VI';
+if(reportUnknown)add('notes','病理活動性尚未確認','建議檢視活動性／慢性化項目，避免僅依 Class 判定免疫抑制強度。');
+if(p.ifta!==null&&p.ifta>=50)add('notes','IFTA ≥50%','高度小管間質慢性化可能限制免疫治療效益；需對照活動性病灶及完整腎切片。');
+if(p.ci!==null&&p.ci>=6)add('notes','慢性化指數偏高','CI 不宜單獨用單一切點決定停用或增加免疫治療；請與 AI、IFTA、eGFR 及腎臟病理會診共同判讀。');
+if(p.ai!==null&&p.ai===0&&high)add('notes','Activity index 為 0','若病理確無活動性，應避免僅因蛋白尿而直接加重免疫抑制，必要時重複評估病理。');
+if(egfrDrop!==null&&egfrDrop>20)add('urgent','eGFR 較治療前下降超過 20%','需重新確認 hemodynamics、腎毒性、活動性 LN、TMA/APS、感染或其他 AKI 原因。');
+if(p.rapid)add('urgent','疑似快速進展性腎炎','建議加速住院／專科評估，必要時急切片或重新切片；不應等待例行 6–12 個月追蹤。');
+if(p.infect)add('urgent','嚴重感染／疑似未控制感染','感染處理及病情穩定優先；免疫治療升級需感染科與原治療團隊共同權衡。');
+if(p.hbv==='unknown')add('notes','HBV 篩檢未完成','免疫抑制前確認 HBsAg、anti-HBc、anti-HBs；視結果補充 HBV DNA。');
+if(p.hbv==='core'||p.hbv==='positive')add('avoid','HBV 再活化風險','抗 CD20（rituximab／obinutuzumab）具高 HBV 再活化風險；建議先評估 HBV DNA 並由肝膽專科決定預防抗病毒治療。');
+if(p.preg!=='no'){
+  r.summary=p.preg==='pregnant'?'懷孕中 LN：需高危險妊娠共同決策':'備孕 LN：先達穩定緩解並轉換相容藥物';
+  add('primary','跨科妊娠相容路徑','優先會同腎臟、風濕免疫與高危險妊娠團隊，評估 HCQ、適當 glucocorticoid、azathioprine，必要時考量 tacrolimus（依腎功能與血壓）。活動性增生型 LN 需要迅速個別化處理。');
+  add('avoid','避免妊娠暴露 MMF／MPA','MMF／MPA 具致畸性；CYC 與新型生物製劑也不可直接套用非妊娠誘導路徑。應依懷孕時點和疾病嚴重程度由專科決定。');
+}else if(p.infect){
+  r.summary='目前不宜直接以自動規則決定免疫治療升級';
+  add('primary','先處理感染並確認 LN 活動性','完成感染來源評估與治療，同時檢視腎切片、腎功能、生命徵象與既有免疫抑制用藥，必要時住院並進行共同決策。');
+}else if(p.cl==='unknown'){
+  r.summary='尚未有病理分型：優先確認診斷';
+  add('primary','考慮腎切片與完整評估','SLE 病人 UPCR >0.5 g/g 或不明原因腎功能下降，通常應評估腎臟切片；活動性尿沉渣、快速惡化更需加速。');
+  add('avoid','勿預設增生型 LN 誘導方案','未確認病理時，避免只憑 anti-dsDNA／補體或單次蛋白尿推定 Class III/IV。');
+}else if(p.cl==='VI'||chronic){
+  r.summary='慢性化為主：以腎臟保護為主要方向';
+  add('primary','CKD 腎臟保護與 SLE 維持管理','評估血壓、蛋白尿、RAAS 抑制（若無妊娠及禁忌）、HCQ（若無禁忌）、心血管及腎衰竭風險；腎外 SLE 另行治療。');
+  add('avoid','不宜僅憑持續蛋白尿無限升級免疫抑制','Class VI 或無活動性且高度疤痕化通常難從強效免疫誘導獲益；若臨床與病理不一致可討論重切片。');
+}else if(p.cl==='I'||p.cl==='II'){
+  r.summary='Class I/II：通常以腎臟保護與 SLE 控制為主';
+  add('primary','HCQ + 腎臟保護（按禁忌調整）','控制血壓、蛋白尿、腎外 SLE；一般不因 Class I/II 本身就常規接受強效腎臟誘導治療。');
+  if(p.pcr>=3)add('alternative','評估 lupus podocytopathy／重疊病理','Class I/II 合併腎病範圍蛋白尿，需檢視 EM 足突消失與其他合併病變，治療可能有所不同。');
+}else if(pureV){
+  if(p.pcr<1){
+    r.summary='Pure Class V 且 UPCR <1 g/g：以支持性治療為起點';
+    add('primary','HCQ 與腎臟保護','密切追蹤蛋白尿、腎功能、血壓及腎外 SLE；病情上升或重度腎外活性時重新評估免疫治療。');
+  }else if(canCNI && p.mmf){
+    r.summary='Pure Class V：優先考慮 GC + MPAA + CNI';
+    add('primary','GC + MPAA + CNI','ACR 對 Pure Class V 且 UPCR ≥1 g/g 提出條件式三重方案；需追蹤 CNI 腎毒性、血壓和蛋白尿。');
+    add('alternative','GC + MPAA 或其他經專科確認方案','如 CNI 不耐受或可近性不足，需依腎功能、血栓風險、病情與證據強度調整。');
+  }else{
+    r.summary='Pure Class V：CNI 風險／資料限制，優先重新評估方案';
+    add('primary',p.mmf?'GC + MPAA（必要時專科調整）':'MPAA 不耐受：需專科選擇替代免疫治療','因 eGFR ≤45、嚴重高血壓、CNI 不耐受或血壓資料不全，不應自動採用含 CNI 的三重治療。');
+    add('alternative','審視其他 Class V 免疫治療選項','依完整病理、腎病症候群風險、感染與用藥可近性個別化。');
+  }
+  if(p.pcr>=3)add('notes','腎病症候群相關風險','評估 albumin、浮腫、血栓風險及出血風險；不應僅憑蛋白尿自動給予抗凝。');
+}else if(high){
+  if(p.rapid&&p.cresc==='yes'){
+    r.summary='高度活動性／疑似 RPGN：緊急討論 MPAA 與 CYC 誘導方案';
+    add('primary','IV methylprednisolone pulse 後 + MPAA 或 IV CYC（依情境）','若腎功能快速下降並伴大量活動性 crescents／fibrinoid necrosis，ACR 指引允許在部分個案偏向 CYC-based regimen；評估生育、感染、血球及病毒風險。');
+    add('alternative','後續 belimumab 等加成策略','病情穩定後依腎功能、病理及既有藥物選擇；不宜機械套用一般 CNI 路徑。');
+  }else if(!p.mmf){
+    r.summary='MPAA 不耐受：考慮 CYC-based 誘導與專科替代方案';
+    add('primary','GC + 低劑量 IV CYC 誘導（如適當）','評估 ELNT 方案及後續維持藥物，重視生育保護、感染、血球與累積毒性。');
+    add('alternative','其他專科免疫治療','可能考慮 belimumab 或其他策略，依病理、病情、可近性及台灣適應症／給付限制個別化。');
+  }else if((p.egfr<=45||badBP||p.cniContra||chronic)||p.extra||bpUnknown){
+    r.summary='活動性 Class III/IV ± V：優先考慮 GC + MPAA + Belimumab';
+    add('primary','GC + MPAA + Belimumab','低 eGFR、顯著高血壓、CNI 風險或中重度腎外 SLE 時，相對偏好含 belimumab 組合。台灣健保 LN 給付未必允許初始即使用。');
+    add('alternative','GC + MPAA（KDIGO 接受）／個別化 CYC','若生物製劑不可近或不符合台灣給付，依病情考慮標準雙重治療；重症／快速惡化時另行評估 CYC。');
+    if(p.egfr<=45||badBP||p.cniContra)add('avoid','避免直接採用一般 CNI 加成路徑','eGFR ≤45、血壓 >165/105 或 CNI 禁忌時，腎毒性及高血壓風險較高，需審慎。');
+    if(bpUnknown)add('notes','血壓資料未填','補齊血壓後才能確認是否適合優先採用 CNI 方案。');
+  }else if(p.pcr>=3){
+    r.summary='活動性 Class III/IV ± V、蛋白尿高：優先考慮 GC + MPAA + CNI';
+    add('primary','GC + MPAA + CNI','ACR 對 UPCR ≥3 g/g 且腎功能保留、血壓可控、慢性化不顯著者，條件式偏好 CNI-containing triple therapy，以加快蛋白尿下降。');
+    add('alternative','GC + MPAA + Belimumab','可考量腎外 SLE、復發風險或 CNI 相關問題；並請獨立檢視台灣健保初次申請條件。');
+  }else{
+    r.summary='活動性 Class III/IV ± V：以 GC + MPAA-based 方案為核心';
+    add('primary','GC + MPAA + Belimumab 或 GC + MPAA + CNI','ACR 提倡適合患者的三重治療；依腎外活性、蛋白尿、eGFR、血壓與偏好選擇。');
+    add('alternative','GC + MPAA／低劑量 IV CYC','KDIGO 2024 也列為合適初始治療選項，視藥物取得、感染、生育及不耐受情況調整。');
+  }
+  if(p.egfr>=30){
+    add('alternative','Obinutuzumab + MPAA + GC（新近國際選項）','EULAR 2025 已納入；2025/10 獲美國 FDA 核准成人活動性 LN。REGENCY 研究未納入 eGFR <30 或 RPGN；台灣核准及 LN 健保給付需另核實，不能視為已可給付。');
+  }else{
+    add('notes','Obinutuzumab 證據外推限制','REGENCY 研究排除 eGFR <30 mL/min/1.73m²；重度腎損傷不宜直接外推試驗結果。');
+  }
+  if(p.hbv!=='negative')add('avoid','開始 B 細胞導向治療前確認 HBV 預防策略','尤其抗 CD20 療法，必須完成 HBV 篩檢、必要 HBV DNA 及抗病毒預防規劃。');
+}
+if(p.phase!=='new'&&high&&!p.infect&&p.preg==='no'&&!chronic){
+ const complete=p.pcr<0.5&&(egfrDrop===null||egfrDrop<=20),partial=(drop!==null&&drop>=50&&p.pcr<3)&&(egfrDrop===null||egfrDrop<=20);
+ if(complete){
+   add('notes','已達近似完全腎反應數值指標','若疾病穩定，優先維持既有有效方案並逐步減少 GC；ACR 通常建議總免疫治療約 3–5 年，避免單次數值達標後立即停藥。');
+   if(p.phase==='maintenance'){r.summary='完全腎反應：延續有效維持治療、不要因單次達標就停藥';}
+ }else if(partial){add('notes','達近似部分腎反應','若 UPCR 持續下降且 eGFR 穩定，可繼續治療並追蹤；趨勢停滯或惡化則重新評估。');}
+ else if(p.months!==null&&p.months>=6){
+   add('urgent','治療 ≥6 個月仍未達近似部分反應','先確認依從性、MPAA 劑量／曝露、藥物毒性、血壓、感染與病理活動性；必要時重切片、調整或升級治療。');
+ }else{add('notes','反應尚未定論','治療早期宜比較 3、6、12 個月 UPCR 和 eGFR 趨勢，快速惡化不應等待。');}
+}
+if(!p.mmf)add('avoid','MMF／MPA 不耐受','不應將 MPAA-based 三重治療視為可直接執行處方；應考量 CYC、AZA 或其他專科替代方案。');
+if(cniRisk&&p.preg==='no')add('avoid','CNI 風險','腎功能不佳、控制不良血壓或已知不耐受時，避免在未做安全評估下直接加用 tacrolimus／voclosporin。');
+if(p.reg==='mpaaBeli'&&p.hbv==='negative')add('notes','既有 Belimumab 治療','新方案須考量是否已使用 belimumab；避免未確認下自行重複併用生物製劑。');
+add('monitor','治療前安全基線','CBC/differential、SCr/eGFR、UPCR/尿沉渣、albumin、血壓、肝功能、C3/C4、anti-dsDNA；篩檢 HBV/HCV/TB 等依治療風險，疫苗與妊娠評估。');
+add('monitor','治療中追蹤','活動期至少約每 1–3 個月評估 UPCR、SCr/eGFR、尿沉渣、血壓與用藥毒性；ACR 未達完全腎反應至少每 3 個月量化蛋白尿，緩解後每 3–6 個月。');
+add('monitor','類固醇與維持','ACR 常用 pulse IV GC 後 prednisone ≤0.5 mg/kg/day（上限 40 mg/day）並降至第 6 個月 ≤5 mg/day；劑量與感染/糖代謝/骨骼風險需個別化。');
+if(high||pureV){
+ const maybe=(p.months!==null&&p.months>=6&&p.phase!=='new'&&drop!==null&&drop<50&&p.pcr>=1)||(p.months!==null&&p.months>=6&&p.phase!=='new'&&egfrDrop!==null&&egfrDrop>20&&(p.pcr>=1||p.rapid));
+ r.nhi=maybe?'量化資料可能接近 Belimumab LN 初次送審條件；仍須逐項驗證 ≥6 個月標準治療的實際藥物及劑量、完整附件、事前審查與最新條文，不能認定可給付。':'Belimumab 在台灣 LN 健保需標準治療至少六個月仍控制不佳，並事前審查；本病例目前不足以確認符合初次申請條件。';
+}else r.nhi='本病理類型不能從目前輸入直接推定符合 Belimumab 狼瘡腎炎專屬給付條件；請參考健保署公告。';
+return r;
+}
+function ppBlock(items,style){return items.map(x=>'<div class="decision-item '+style+'"><h3>'+x.title+'</h3><p>'+x.body+'</p></div>').join('')}
+let ppSummaryText='';
+function runPersonal(){
+ const p=ppData(),r=assessPersonal(p);
+ if(!r.valid){$('ppResult').innerHTML='<h2>請先修正輸入數值</h2><p>'+r.summary+'</p>';$('ppCopyStatus').textContent='輸入有誤，尚無可複製摘要。';ppSummaryText='';return r;}
+ const e=x=>x===null?'未提供':x.toFixed(1),percent=x=>x===null?'未提供':x.toFixed(1)+'%';
+ const info='<div class="decision-mini"><span>病理：'+p.cl+'</span><span>eGFR：'+e(p.egfr)+'</span><span>UPCR：'+e(p.pcr)+' g/g</span><span>UPCR 下降：'+percent(r.drop)+'</span><span>eGFR 下降：'+percent(r.egfrDrop)+'</span></div>';
+ const head='<h2>③ 個別化臨床建議</h2><div class="personal-status">'+r.summary+'</div>'+info;
+ const notices=r.urgent.length?'<h3>優先處理的臨床警訊</h3>'+ppBlock(r.urgent,'red'):'';
+ const pri='<h3>優先考慮方案（非自動處方）</h3>'+ppBlock(r.primary,'green');
+ const alt=r.alternative.length?'<h3>替代／其他候選方案</h3>'+ppBlock(r.alternative,''):'';
+ const warns=r.avoid.length?'<h3>禁忌、暫緩或額外安全評估</h3>'+ppBlock(r.avoid,'red'):'';
+ const facts=r.notes.length?'<h3>病理及療效判讀要點</h3>'+ppBlock(r.notes,'amber'):'';
+ const mon='<h3>檢查與追蹤計畫</h3>'+ppBlock(r.monitor,'');
+ const nhi='<h3>台灣健保（不等於國際建議）</h3><div class="decision-item amber">'+r.nhi+'<p><a href="https://www.nhi.gov.tw/" target="_blank" rel="noopener">健保署官方網站</a>：請按申報日條文及院內藥事規範核對。</p></div>';
+ $('ppResult').innerHTML=head+notices+pri+alt+warns+facts+mon+nhi+'<p class="person-footer">依據 KDIGO 2024、ACR 2024/2025、EULAR 2025；此工具不連接病歷系統、不保存資料。資料不完整時推薦不應取代主治醫師判斷。</p>';
+ ppSummaryText=[r.summary,'Class '+p.cl+'; eGFR '+e(p.egfr)+'; UPCR '+e(p.pcr)+' g/g','優先考慮：',...r.primary.map(x=>x.title+'：'+x.body),'替代：',...r.alternative.map(x=>x.title+'：'+x.body),'風險：',...r.urgent.concat(r.avoid).map(x=>x.title+'：'+x.body),'健保：'+r.nhi].join('\n');
+ $('ppCopyStatus').textContent='已產生建議。可複製去識別化摘要。';return r;
+}
+$('ppRun').onclick=runPersonal;
+$('ppClear').onclick=()=>{personIds.forEach(id=>{const el=$(id);if(el.tagName==='SELECT')el.selectedIndex=0;else el.value='';});$('ppResult').innerHTML='<h2>③ 個別化臨床建議</h2><p>資料已清除，請重新輸入。</p>';$('ppCopyStatus').textContent='已清除本頁表單中的資料。';ppSummaryText='';};
+$('ppCopy').onclick=()=>{if(!ppSummaryText){$('ppCopyStatus').textContent='請先產生分析結果。';return;}if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(ppSummaryText).then(()=>$('ppCopyStatus').textContent='已複製無識別資訊摘要。').catch(()=>$('ppCopyStatus').textContent='無法複製，請手動選取文字。')}else{$('ppCopyStatus').textContent='此環境不支援直接複製，請手動選取結果。'}};
+const personExamples=[
+{ppClass:'IV+V',ppEgfr:'78',ppBaseEgfr:'80',ppPcr:'6.1',ppBasePcr:'7',ppSBP:'126',ppDBP:'78',ppActivity:'active',ppAI:'12',ppCI:'2',ppIFTA:'10',ppCrescent:'no',ppHBV:'negative'},
+{ppClass:'IV',ppEgfr:'32',ppBaseEgfr:'43',ppPcr:'3.3',ppBasePcr:'4.5',ppSBP:'145',ppDBP:'88',ppActivity:'mixed',ppAI:'8',ppCI:'6',ppIFTA:'35',ppRapid:'yes',ppHBV:'core'},
+{ppClass:'V',ppEgfr:'85',ppBaseEgfr:'86',ppPcr:'4.4',ppBasePcr:'5.1',ppSBP:'128',ppDBP:'80',ppActivity:'active',ppHBV:'negative'},
+{ppClass:'III',ppEgfr:'76',ppBaseEgfr:'78',ppPcr:'0.8',ppBasePcr:'2.4',ppSBP:'120',ppDBP:'76',ppActivity:'mixed',ppPreg:'planning',ppPhase:'maintenance',ppHBV:'negative'}
+];
+document.querySelectorAll('[data-person-example]').forEach(btn=>btn.addEventListener('click',()=>{personIds.forEach(id=>{const el=$(id);if(el.tagName==='SELECT')el.selectedIndex=0;else el.value='';});for(const [k,v] of Object.entries(personExamples[Number(btn.dataset.personExample)]))$(k).value=v;runPersonal();tab('personalized')}));
+
 </script></body></html>
